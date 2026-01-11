@@ -13,19 +13,15 @@ public class Item {
 
     @Id
     private Long id; // OSRS item id (from mapping)
-
     @Column(nullable = false)
     private String name;
-
     private boolean members;
     @Column(length = 2000)
     private String examine;
-
     private String icon;
-
     private Instant lastSyncedAt;
-
     private int lowalch;
     private int highalch;
+
 
 }
