@@ -32,11 +32,10 @@ public class ItemLatestService {
             }
             ItemLatestPrice item = new ItemLatestPrice();
             item.setItemId(Integer.parseInt(entry.getKey()));
-            item.setLow(e.getLow());
-            item.setHigh(e.getHigh());
+            item.setLowPrice(e.getLow());
+            item.setHighPrice(e.getHigh());
             item.setHighTime(Instant.ofEpochSecond(e.getHighTime()));
             item.setLowTime(Instant.ofEpochSecond(e.getLowTime()));
-            item.setLastUpdate(Instant.now());
             save.add(item);
         }
 

@@ -31,7 +31,7 @@ public class ItemMappingService {
 
         for(OsrsMappingItemDto item : items){
             Item save = new Item();
-            save.setId(item.id);
+            save.setItemId(item.id);
             save.setName(item.name);
             save.setExamine(item.examine);
             save.setMembers(item.members);
